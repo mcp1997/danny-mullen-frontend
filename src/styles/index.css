@@ -23,7 +23,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-  /* color: red; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -48,3 +47,271 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* HEADER */
+.Header1 {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  padding: 2% 0;
+  background-color: rgb(0,7,20);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -10%;
+}
+
+h1 {
+  font-family: 'Josefin Sans Variable', sans-serif;
+  color: rgb(225,255,0);
+  font-size: 4rem;
+  text-align: center;
+}
+
+.socials {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* MERCH PREVIEW */
+.MerchPreview {
+  /* border: solid red 1px; */
+  margin: 10% auto 0;
+  padding: 1% 0 0;
+  background-color: #d3d3d3;
+  width: 80%;
+}
+
+.merch-title {
+  /* border: 1px solid red; */
+  font-family: 'Josefin Sans Variable', sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  color: #000714;
+  margin: 0 auto -12%;
+  width: 96%;
+  position: relative;
+  z-index: 1;
+}
+
+.merch-container {
+  /* border: 1px solid red; */
+  display: flex;
+  margin: 10% auto -2.5%;
+  width: 90%;
+  height: 580px;
+  background-color: #cde800;
+}
+
+.merchImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gallery-container {
+  flex: 1;
+  background-color: #cde800;
+}
+
+.image-gallery-image {
+  cursor: pointer;
+}
+
+.link-button-container {
+  /* border: red solid 1px; */
+  display: flex;
+  justify-content: flex-end;
+  width: 96%;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+/* YOUTUBE PREVIEW */
+.YouTubePreview {
+  /* border: solid red 1px; */
+  margin: 2% auto;
+  width: 100%;
+  background-color: #000714;
+}
+
+.vids-title-container {
+  width: fit-content;
+  padding: 24px 0;
+  margin: 0 auto 4px;
+}
+
+.youtube-vids-title {
+  color: #d3d3d3;
+  font-family: 'Josefin Sans Variable', sans-serif;
+  font-size: 6rem;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.youtube-vids-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin: 0 auto;
+
+  hr {
+    min-height: 100%;
+    max-height: 100vh;
+    margin: 0;
+    width: 4px;
+    background-color: #d3d3d3;
+    color: #d3d3d3;
+  }
+}
+
+.LatestVideo {
+  background-color: #cde800;
+  height: 432px;
+  width: 768px;
+  padding: 1%;
+  padding-bottom: 48px;
+  border-radius: 10px;
+
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #000714;
+    margin-top: 6px;
+  }
+}
+
+.LatestShorts {
+  background-color: #cde800;
+  height: 432px;
+  width: 825px;
+  padding: 1%;
+  padding-bottom: 48px;
+  border-radius: 10px;
+
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #000714;
+    margin-top: 6px;
+  }
+}
+
+.shorts-container {
+  display: flex;
+  gap: 48px;
+}
+
+.links-container {
+  /* border: solid red 1px; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+
+  hr {
+    min-height: 100%;
+    max-height: 100vh;
+    margin: 0;
+    color: #d3d3d3;
+  }
+}
+
+/* PATREON PREVIEW */
+.PatreonPreview {
+  width: 80%;
+  margin: 0 auto 36px;
+  background-color: #d3d3d3;
+}
+
+.patreon-title-container {
+  width: fit-content;
+  padding: 24px 0;
+  margin: 0 auto;
+  
+}
+
+.patreon-title {
+  color: #000714;
+  font-family: 'Josefin Sans Variable', sans-serif;
+  font-size: 6rem;
+  border-bottom: 2px solid #000714;
+}
+
+.patreon-subtitle {
+  font-family: 'Josefin Sans Variable', sans-serif; 
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.patreon-image-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  margin: 24px auto 0;
+  gap: 32px;
+}
+
+.patreon-image-background {
+  height: 225px;
+  width: 400px;
+  padding: 16px;
+  background-color: #cde800;
+  border-radius: 10px;
+
+  img {
+    box-shadow: 0 0 8px 4px rgb(100, 100, 100);
+    height: 225px;
+    width: 400px;
+  }
+}
+
+.patreon-link {
+  text-align: center;
+}
+
+/* FOOTER */
+.Footer {
+  width: 100%;
+  padding: 2% 0;
+  background-color: rgb(0,7,20);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Footer h2 {
+  font-family: 'Josefin Sans Variable', sans-serif;
+  color: rgb(225,255,0);
+  font-size: 2.2rem;
+}
+
+.footer-socials-container {
+  width: 20%;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.footer-socials-container h3 {
+  width: 35%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: rgb(225,255,0);
+}
+
+.footer-socials {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+

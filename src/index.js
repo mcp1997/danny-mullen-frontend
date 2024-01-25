@@ -1,18 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
+
 import './styles/index.css'
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import '@fontsource-variable/josefin-sans';
+
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import { Header } from './components/common/Header'
+import { Header1 } from './components/common/header1/Header1';
+// import { Header2 } from './components/common/header2/Header2';
 import { Footer } from './components/common/Footer'
 import HomePage from './components/pages/homePage'
 
 export function App() {
   return (
     <div className='App'>
-      <Header />
-      
+      <Header1 />
+      {/* <Header2 /> */}
+
       <Routes>
         <Route path='/' element={<HomePage />} />
       </Routes>
