@@ -6,13 +6,14 @@ export default function LatestShorts() {
   const [latestShorts, setLatestShorts] = useState([])
 
   useEffect(() => {
-    axios.get('https://yt.lemnoslife.com/channels?part=shorts&id=UCnyxus3H0_-F8Q6gQTkg41g')
+    // axios.get('https://yt.lemnoslife.com/channels?part=shorts&id=UCnyxus3H0_-F8Q6gQTkg41g')
+    axios.get('https://yt.lemnoslife.com/noKey/playlistItems?part=snippet&playlistId=UUSHnyxus3H0_-F8Q6gQTkg41g&maxResults=3')
     .then(res => {
-      console.log(res)
+      // console.log(res)
       const shortsIdArray = []
-      shortsIdArray.push(res.data.items[0].shorts[0].videoId)
-      shortsIdArray.push(res.data.items[0].shorts[1].videoId)
-      shortsIdArray.push(res.data.items[0].shorts[2].videoId)
+      shortsIdArray.push(res.data.items[0].snippet.resourceId.videoId)
+      shortsIdArray.push(res.data.items[1].snippet.resourceId.videoId)
+      shortsIdArray.push(res.data.items[2].snippet.resourceId.videoId)
       setLatestShorts(shortsIdArray)
     })
     .catch(err => {
