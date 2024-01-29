@@ -7,7 +7,7 @@ export default function YouTubePreview() {
   return (
     <div className='YouTubePreview'>
       <div className='vids-title-container'>
-        <h2 className='youtube-vids-title'>Content</h2>
+        <h2 className='youtube-vids-title'>YouTube Channel</h2>
       </div>
       
       <div className='youtube-vids-container'>
