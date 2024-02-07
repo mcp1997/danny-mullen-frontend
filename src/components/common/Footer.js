@@ -6,6 +6,7 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faPatreon } from '@fortawesome/free-brands-svg-icons'
 import { faTiktok } from '@fortawesome/free-brands-svg-icons'
+import { SiOnlyfans } from 'react-icons/si'
 
 function Footer() {
   return (
@@ -31,6 +32,9 @@ function Footer() {
           </StyledLink>
           <StyledLink to='https://www.patreon.com/DannyMullen'>
             <StyledIcon className='icon' icon={faPatreon} />
+          </StyledLink>
+          <StyledLink to=''>
+            <SiOnlyfans className='onlyfans-social'/>
           </StyledLink>
         </div>
       </div>

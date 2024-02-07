@@ -69,16 +69,26 @@ h1 {
 }
 
 .socials {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
+.onlyfans-social { /* one-off icon since FontAwesome does not provide icon for OnlyFans - also applies to icon in Footer */
+
+  font-size: 1.4rem;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all ease 500ms;
+    color: rgb(181,205,0);
+  }
+}
+
 /* MERCH PREVIEW */
 .MerchPreview {
-  /* border: solid red 1px; */
   margin: 10% auto 0;
   padding: 1% 0 0;
   background-color: #d3d3d3;
@@ -86,7 +96,6 @@ h1 {
 }
 
 .merch-title {
-  /* border: 1px solid red; */
   font-family: 'Josefin Sans Variable', sans-serif;
   font-size: 6rem;
   font-weight: bold;
@@ -98,7 +107,6 @@ h1 {
 }
 
 .merch-container {
-  /* border: 1px solid red; */
   display: flex;
   margin: 10% auto -2.5%;
   width: 90%;
@@ -122,7 +130,6 @@ h1 {
 }
 
 .link-button-container {
-  /* border: red solid 1px; */
   display: flex;
   justify-content: flex-end;
   width: 96%;
@@ -132,31 +139,17 @@ h1 {
 
 /* YOUTUBE PREVIEW */
 .YouTubePreview {
-  /* border: solid red 1px; */
   margin: 2% auto;
   width: 100%;
   background-color: #000714;
-}
-
-.vids-title-container {
-  width: fit-content;
-  padding: 24px 0;
-  margin: 0 auto 4px;
-}
-
-.youtube-vids-title {
-  color: #d3d3d3;
-  font-family: 'Josefin Sans Variable', sans-serif;
-  font-size: 6rem;
-  border-bottom: 2px solid #d3d3d3;
+  padding: 1px 0; /* prevents margin collapsing */
 }
 
 .youtube-vids-container {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   gap: 48px;
-  margin: 0 auto;
+  margin: 4px auto 0;
 
   hr {
     min-height: 100%;
@@ -208,12 +201,11 @@ h1 {
 }
 
 .links-container {
-  /* border: solid red 1px; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 60%;
-  margin: 0 auto;
+  margin: 8px auto 15px; /* 15px to account for 1px of padding on parent elements to prevent margin collapsing */
 
   hr {
     min-height: 100%;
@@ -228,20 +220,7 @@ h1 {
   width: 80%;
   margin: 0 auto 36px;
   background-color: #d3d3d3;
-}
-
-.patreon-title-container {
-  width: fit-content;
-  padding: 24px 0;
-  margin: 0 auto;
-  
-}
-
-.patreon-title {
-  color: #000714;
-  font-family: 'Josefin Sans Variable', sans-serif;
-  font-size: 6rem;
-  border-bottom: 2px solid #000714;
+  padding: 1px 0; /* prevents margin collapsing */
 }
 
 .patreon-subtitle {
@@ -252,7 +231,6 @@ h1 {
 }
 
 .patreon-image-container {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-evenly;
   margin: 24px auto 0;
@@ -275,6 +253,59 @@ h1 {
 
 .patreon-link {
   text-align: center;
+  margin: 8px auto 15px; /* 15px to account for 1px of padding on parent elements to prevent margin collapsing */
+}
+
+/* ONLYFANS PREVIEW */
+.OnlyfansPreview {
+  background-color: #000714;
+  margin-bottom: 24px;
+  padding: 1px 0; /* prevents margin collapsing */
+}
+
+.onlyfans-subtitle {
+  font-family: 'Josefin Sans Variable', sans-serif;
+  color: #d3d3d3;
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
+  margin: 24px auto;
+}
+
+.onlyfans-container {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.onlyfans-img-container {
+  height: 400px;
+  width: 700px;
+  padding: 16px;
+  background-color: #cde800;
+  border-radius: 10px;
+}
+
+.onlyfans-text {
+  width: 30%;
+  margin: auto 0;
+
+  p {
+    color: #d3d3d3;
+    font-family: 'Josefin Sans Variable', sans-serif;  
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .onlyfans-text-italic {
+    font-style: italic;
+    margin-top: 48px;
+  }
+}
+
+.onlyfans-link {
+  text-align: center;
+  margin: 8px auto 15px; /* 15px to account for 1px of padding on parent elements to prevent margin collapsing */
 }
 
 /* FOOTER */
@@ -294,14 +325,14 @@ h1 {
 }
 
 .footer-socials-container {
-  width: 20%;
+  width: 30%;
   display: flex;
   justify-content: stretch;
   align-items: center;
+  gap: 16px;
 }
 
 .footer-socials-container h3 {
-  width: 35%;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 1.4rem;
@@ -309,7 +340,7 @@ h1 {
 }
 
 .footer-socials {
-  width: 65%;
+  width: 55%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;

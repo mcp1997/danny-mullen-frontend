@@ -1,14 +1,12 @@
 import React from 'react'
 import LatestVideo from './LatestVideo'
 import LatestShorts from './LatestShorts'
-import { LinkButton } from '../../../styles/styledComponents'
+import { StyledH2, LinkButton } from '../../../styles/styledComponents'
 
 export default function YouTubePreview() {
   return (
     <div className='YouTubePreview'>
-      <div className='vids-title-container'>
-        <h2 className='youtube-vids-title'>YouTube Channel</h2>
-      </div>
+      <StyledH2 style={{ color: '#d3d3d3', borderBottom: '2px solid #d3d3d3'}}>YouTube Channel</StyledH2>
       
       <div className='youtube-vids-container'>
         <LatestVideo />

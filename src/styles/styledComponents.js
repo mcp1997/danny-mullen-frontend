@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom'
 import Button from '@mui/material/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+const StyledH2 = styled('h2')({
+  fontFamily: '"Josefin Sans Variable", sans-serif',
+  fontSize: '6rem',
+  width: 'fit-content',
+  margin: '31px auto 32px', /* 31px to account for 1px of padding on parent elements to prevent margin collapsing */
+})
+
 const StyledLink = styled(Link)({
   color: 'rgb(225,255,0)',
   textDecoration: 'none',
@@ -80,4 +87,10 @@ const StyledIcon = styled(FontAwesomeIcon)({
   }
 })
 
-export { StyledLink, LinkButton, NavButton, StyledIcon }
+export { 
+  StyledH2, 
+  StyledLink, 
+  LinkButton, 
+  NavButton, 
+  StyledIcon 
+}

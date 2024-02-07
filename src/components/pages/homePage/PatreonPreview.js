@@ -1,5 +1,5 @@
 import React from 'react'
-import { LinkButton } from '../../../styles/styledComponents'
+import { StyledH2, LinkButton } from '../../../styles/styledComponents'
 import patreonThumb1 from '../../../styles/assets/dotathumb.jpg'
 import patreonThumb2 from '../../../styles/assets/vegasthumb2.jpg'
 import patreonThumb3 from '../../../styles/assets/mimethumb3.jpg'
@@ -7,9 +7,8 @@ import patreonThumb3 from '../../../styles/assets/mimethumb3.jpg'
 export default function PatreonPreview() {
   return (
     <div className='PatreonPreview'>
-      <div className='patreon-title-container'>
-        <h2 className='patreon-title'>Patreon</h2>
-      </div>
+      <StyledH2 style={{ color: '#000714', borderBottom: '2px solid #000714' }}>Patreon</StyledH2>
+      
       <h3 className='patreon-subtitle'>Join Danny&apos;s Patreon to gain access to exclusive content</h3>
       <div className='patreon-image-container'>
         <div className='patreon-image-background'>
