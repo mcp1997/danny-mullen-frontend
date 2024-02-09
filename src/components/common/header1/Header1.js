@@ -11,40 +11,44 @@ import { SiOnlyfans } from 'react-icons/si'
 function Header1() {
   return (
     <div className='Header1'>
-      
-      <NavButton style={{ fontSize: '1.4rem' }} href='#top'>Home</NavButton>
-      <NavButton href='https://dannymullen-shop.fourthwall.com/'>Merch</NavButton>
-      
-      <div className='title'>
-        <h1>DANNY MULLEN</h1>
-        <div className='socials'>
-          <StyledLink to='https://www.youtube.com/c/DannyMullenOfficial'>
-            <StyledIcon className='icon' icon={faYoutube} />
-          </StyledLink>
-          <StyledLink to='https://www.instagram.com/dannymullen'>
-            <StyledIcon className='icon' icon={faInstagram} />
-          </StyledLink>
-          <StyledLink to='https://www.tiktok.com/@dmullclips'>
-            <StyledIcon className='icon' icon={faTiktok} />
-          </StyledLink>
-          <StyledLink to='https://x.com/Dannymullen'>
-            <StyledIcon className='icon' icon={faXTwitter} />
-          </StyledLink>
-          <StyledLink to='https://www.facebook.com/DannyMullenOfficial'>
-            <StyledIcon className='icon' icon={faFacebook} />
-          </StyledLink>
-          <StyledLink to='https://www.patreon.com/DannyMullen'>
-            <StyledIcon className='icon' icon={faPatreon} />
-          </StyledLink>
-          <StyledLink to=''>
-            <SiOnlyfans className='onlyfans-social'/>
-          </StyledLink>
+      <div className='header-wrapper'>
+        <div className='nav-container'>
+          <NavButton href='#top'>Home</NavButton>
+          <NavButton href='https://dannymullen-shop.fourthwall.com/'>Merch</NavButton>
+        </div>
+        
+        <div className='title'>
+          <h1>DANNY MULLEN</h1>
+          <div className='socials'>
+            <StyledLink to='https://www.youtube.com/c/DannyMullenOfficial'>
+              <StyledIcon className='icon' icon={faYoutube} />
+            </StyledLink>
+            <StyledLink to='https://www.instagram.com/dannymullen'>
+              <StyledIcon className='icon' icon={faInstagram} />
+            </StyledLink>
+            <StyledLink to='https://www.tiktok.com/@dmullclips'>
+              <StyledIcon className='icon' icon={faTiktok} />
+            </StyledLink>
+            <StyledLink to='https://x.com/Dannymullen'>
+              <StyledIcon className='icon' icon={faXTwitter} />
+            </StyledLink>
+            <StyledLink to='https://www.facebook.com/DannyMullenOfficial'>
+              <StyledIcon className='icon' icon={faFacebook} />
+            </StyledLink>
+            <StyledLink to='https://www.patreon.com/DannyMullen'>
+              <StyledIcon className='icon' icon={faPatreon} />
+            </StyledLink>
+            <StyledLink to=''>
+              <SiOnlyfans className='onlyfans-social'/>
+            </StyledLink>
+          </div>
+        </div>
+        
+        <div className='nav-container'>
+          <NavButton href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</NavButton>
+          <NavButton href='https://www.patreon.com/DannyMullen'>Patreon</NavButton>
         </div>
       </div>
-      
-      <NavButton href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</NavButton>
-      <NavButton href='https://www.patreon.com/DannyMullen'>Patreon</NavButton>
-      
     </div>
   )
 }

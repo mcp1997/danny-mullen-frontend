@@ -51,10 +51,12 @@ const LinkButton = styled(Button)({
 })
 
 const NavButton = styled(Button)({
+  border: '1px solid red',
   position: 'relative',
   color: 'rgb(225,255,0)',
   textDecoration: 'none',
   fontSize: '1.4rem',
+  width: 'fit-content',
   
   '&:hover': {
     color: 'rgb(181,205,0)',
@@ -74,16 +76,35 @@ const NavButton = styled(Button)({
   },
   
   '&:hover:before': {
-    width: '80%',
+    width: '100%',
   },
+
+  '@media (max-width: 1200px)': {
+    fontSize: '1rem'
+  },
+
+  '@media (max-width: 768px)': {
+    fontSize: '0.8rem',
+    minWidth: '0px',
+    padding: '0',
+
+    '&:before': {
+      height: '2px',
+    }
+  }
 })
 
 const StyledIcon = styled(FontAwesomeIcon)({
   fontSize: '1.4rem',
+
   '&:hover': {
     transform: 'scale(1.2)',
     transition: 'all ease 500ms',
     color: 'rgb(181,205,0)',
+  },
+
+  '@media (max-width: 1200px)': {
+    fontSize: '1.2rem',
   }
 })
 

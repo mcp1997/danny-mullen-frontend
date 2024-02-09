@@ -13,7 +13,7 @@ function Footer() {
     <div className='Footer'>
       <h2>DANNY MULLEN</h2>
       <div className='footer-socials-container'>
-        <h3>FOLLOW ME:</h3>
+        <h3>FOLLOW ME</h3>
         <div className='footer-socials'>
           <StyledLink to='https://www.youtube.com/c/DannyMullenOfficial'>
             <StyledIcon className='icon' icon={faYoutube} />

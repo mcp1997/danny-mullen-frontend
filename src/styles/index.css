@@ -55,20 +55,40 @@ table {
   width: 100%;
   padding: 2% 0;
   background-color: rgb(0,7,20);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   margin-top: -10%;
 }
 
+.header-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.title {
+  border: 1px solid red;
+  flex: 1;
+}
+
 h1 {
+  border: 1px solid red;
   font-family: 'Josefin Sans Variable', sans-serif;
   color: rgb(225,255,0);
   font-size: 4rem;
   text-align: center;
+  width: auto;
+}
+
+.nav-container {
+  border: 1px solid red;
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .socials {
+  border: 1px solid red;
   width: 60%;
   margin: 0 auto;
   display: flex;
@@ -321,15 +341,12 @@ h1 {
 .Footer h2 {
   font-family: 'Josefin Sans Variable', sans-serif;
   color: rgb(225,255,0);
-  font-size: 2.2rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .footer-socials-container {
   width: 30%;
-  display: flex;
-  justify-content: stretch;
-  align-items: center;
-  gap: 16px;
 }
 
 .footer-socials-container h3 {
@@ -337,12 +354,76 @@ h1 {
   font-weight: 500;
   font-size: 1.4rem;
   color: rgb(225,255,0);
+  border-bottom: 1px solid rgb(255, 255, 0);
+  width: fit-content;
+  margin: 0 auto 16px;
+  padding: 0 0 4px;
 }
 
 .footer-socials {
-  width: 55%;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+@media (max-width: 1200px) {
+  /* HEADER */
+  .Header1 {
+    padding: 3.5% 0;
+  }
+
+  .header-wrapper {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .socials {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .Footer {
+    padding: 3.5% 0;
+    background-color: rgb(0,7,20);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+
+  .footer-socials-container {
+    width: 40%;
+    display: block;
+
+    h3 {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+
+  .footer-socials {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  /* HEADER */
+}
+
+@media (max-width: 768px) {
+  /* HEADER */
+  .nav-container {
+    flex-flow: column nowrap;
+    gap: 16px;
+    align-items: center;
+  }
 }
 
