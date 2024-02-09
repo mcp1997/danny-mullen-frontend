@@ -51,7 +51,7 @@ const LinkButton = styled(Button)({
 })
 
 const NavButton = styled(Button)({
-  border: '1px solid red',
+  // border: '1px solid red',
   position: 'relative',
   color: 'rgb(225,255,0)',
   textDecoration: 'none',

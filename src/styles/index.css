@@ -59,7 +59,7 @@ table {
 }
 
 .header-wrapper {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -67,28 +67,29 @@ table {
 }
 
 .title {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   flex: 1;
 }
 
 h1 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-family: 'Josefin Sans Variable', sans-serif;
   color: rgb(225,255,0);
   font-size: 4rem;
   text-align: center;
   width: auto;
+  white-space: nowrap;
 }
 
 .nav-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   flex: 1;
   display: flex;
   justify-content: space-evenly;
 }
 
 .socials {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 60%;
   margin: 0 auto;
   display: flex;
@@ -424,6 +425,13 @@ h1 {
     flex-flow: column nowrap;
     gap: 16px;
     align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  /* HEADER */
+  .nav-container {
+    display: none;
   }
 }
 

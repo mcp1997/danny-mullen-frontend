@@ -48,6 +48,20 @@ function Header1() {
           <NavButton href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</NavButton>
           <NavButton href='https://www.patreon.com/DannyMullen'>Patreon</NavButton>
         </div>
+
+        <div className='hamburger-container'>
+          <label className='hamburger-menu'>
+            <input type='checkbox' />
+          </label>
+          <aside className='sidebar'>
+            <nav>
+              <NavButton href='#top'>Home</NavButton>
+              <NavButton href='https://dannymullen-shop.fourthwall.com/'>Merch</NavButton>
+              <NavButton href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</NavButton>
+              <NavButton href='https://www.patreon.com/DannyMullen'>Patreon</NavButton>
+            </nav>
+          </aside>
+        </div>
       </div>
     </div>
   )
