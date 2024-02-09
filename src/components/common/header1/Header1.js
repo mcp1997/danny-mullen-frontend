@@ -55,10 +55,10 @@ function Header1() {
           </label>
           <aside className='sidebar'>
             <nav>
-              <NavButton href='#top'>Home</NavButton>
-              <NavButton href='https://dannymullen-shop.fourthwall.com/'>Merch</NavButton>
-              <NavButton href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</NavButton>
-              <NavButton href='https://www.patreon.com/DannyMullen'>Patreon</NavButton>
+              <div>Home</div>
+              <div>Merch</div>
+              <div>Subscribe</div>
+              <div>Patreon</div>
             </nav>
           </aside>
         </div>

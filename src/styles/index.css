@@ -48,6 +48,10 @@ table {
 	border-spacing: 0;
 }
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 /* HEADER */
 .Header1 {
   position: fixed;
@@ -86,6 +90,10 @@ h1 {
   flex: 1;
   display: flex;
   justify-content: space-evenly;
+}
+
+.hamburger-container {
+  display: none;
 }
 
 .socials {
@@ -184,10 +192,8 @@ h1 {
 
 .LatestVideo {
   background-color: #cde800;
-  height: 432px;
-  width: 768px;
   padding: 1%;
-  padding-bottom: 48px;
+  padding-bottom: 0;
   border-radius: 10px;
 
   h3 {
@@ -195,16 +201,14 @@ h1 {
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     color: #000714;
-    margin-top: 6px;
+    margin: 6px 0 10px;
   }
 }
 
 .LatestShorts {
   background-color: #cde800;
-  height: 432px;
-  width: 825px;
   padding: 1%;
-  padding-bottom: 48px;
+  padding-bottom: 0;
   border-radius: 10px;
 
   h3 {
@@ -212,7 +216,7 @@ h1 {
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     color: #000714;
-    margin-top: 6px;
+    margin: 6px 0 10px;
   }
 }
 
@@ -259,8 +263,6 @@ h1 {
 }
 
 .patreon-image-background {
-  height: 225px;
-  width: 400px;
   padding: 16px;
   background-color: #cde800;
   border-radius: 10px;
@@ -300,8 +302,6 @@ h1 {
 }
 
 .onlyfans-img-container {
-  height: 400px;
-  width: 700px;
   padding: 16px;
   background-color: #cde800;
   border-radius: 10px;
@@ -432,6 +432,28 @@ h1 {
   /* HEADER */
   .nav-container {
     display: none;
+  }
+
+  /* HAMBURGER MENU */
+  :root {
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --hamburger-gap: 6px;
+    --foreground: rgb(225,255,0);
+    --background: rgb(0,7,20);
+  }
+
+  .hamburger-menu::before
+
+  .hamburger-container {
+    display: block;
+  }
+
+  .sidebar {
+    nav {
+      display: block;
+      color: rgb(225,255,0);
+    }
   }
 }
 
