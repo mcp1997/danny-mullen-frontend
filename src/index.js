@@ -9,8 +9,8 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import '@fontsource-variable/josefin-sans';
 
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { NavButton } from './styles/styledComponents';
 
 import { Header1 } from './components/common/header1/Header1';
 // import { Header2 } from './components/common/header2/Header2';
@@ -22,6 +22,15 @@ export function App() {
     <div className='App'>
       <Header1 />
       {/* <Header2 /> */}
+
+      <div className='mobile-nav'>
+        <div className='mobile-nav-container'>
+          <NavButton href='#top'>Home</NavButton>
+          <NavButton href='https://dannymullen-shop.fourthwall.com/'>Merch</NavButton>
+          <NavButton href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</NavButton>
+          <NavButton href='https://www.patreon.com/DannyMullen'>Patreon</NavButton>
+        </div>
+      </div>
 
       <Routes>
         <Route path='/' element={<HomePage />} />

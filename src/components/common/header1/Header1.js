@@ -53,14 +53,14 @@ function Header1() {
           <label className='hamburger-menu'>
             <input type='checkbox' />
           </label>
-          <aside className='sidebar'>
+          {/* <aside className='sidebar'>
             <nav>
               <div>Home</div>
               <div>Merch</div>
               <div>Subscribe</div>
               <div>Patreon</div>
             </nav>
-          </aside>
+          </aside> */}
         </div>
       </div>
     </div>
