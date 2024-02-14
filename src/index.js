@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 
@@ -18,19 +18,42 @@ import { Footer } from './components/common/Footer'
 import HomePage from './components/pages/homePage'
 
 export function App() {
+  const [showMobileNav, setShowMobileNav] = useState(false)
+  const [visible, setVisible] = useState(false)
+
+  const handleCheck = checked => {
+    if (checked) {
+      setShowMobileNav(true) // add element to the DOM, but still invisible
+      requestAnimationFrame(() => {
+        setVisible(true) // mobile nav fades in and is now visible
+      })
+    } else {
+      setVisible(false) // mobile nav fades out
+      setTimeout(() => {
+        setShowMobileNav(false) // remove it from the DOM
+      }, 200) // same as --animation-timing var found in CSS for the hamburger menu
+    }
+  }
+
   return (
     <div className='App'>
-      <Header1 />
+      <Header1 handleCheck={handleCheck} />
       {/* <Header2 /> */}
 
-      <div className='mobile-nav'>
-        <div className='mobile-nav-container'>
-          <NavButton href='#top'>Home</NavButton>
-          <NavButton href='https://dannymullen-shop.fourthwall.com/'>Merch</NavButton>
-          <NavButton href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</NavButton>
-          <NavButton href='https://www.patreon.com/DannyMullen'>Patreon</NavButton>
-        </div>
-      </div>
+      {
+        showMobileNav && (
+          <div className={
+            `mobile-nav ${visible ? 'visible' : ''}`
+          }>
+            <div className='mobile-nav-container'>
+              <NavButton href='#top'>Home</NavButton>
+              <NavButton href='https://dannymullen-shop.fourthwall.com/'>Merch</NavButton>
+              <NavButton href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</NavButton>
+              <NavButton href='https://www.patreon.com/DannyMullen'>Patreon</NavButton>
+            </div>
+          </div>
+        )
+      }
 
       <Routes>
         <Route path='/' element={<HomePage />} />

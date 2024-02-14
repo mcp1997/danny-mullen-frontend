@@ -8,7 +8,9 @@ import { faPatreon } from '@fortawesome/free-brands-svg-icons'
 import { faTiktok } from '@fortawesome/free-brands-svg-icons'
 import { SiOnlyfans } from 'react-icons/si'
 
-function Header1() {
+function Header1(props) {
+  const { handleCheck } = props
+
   return (
     <div className='Header1'>
       <div className='header-wrapper'>
@@ -51,16 +53,9 @@ function Header1() {
 
         <div className='hamburger-container'>
           <label className='hamburger-menu'>
-            <input type='checkbox' />
+            <input type='checkbox' onChange={e => handleCheck(e.target.checked)} />
           </label>
-          {/* <aside className='sidebar'>
-            <nav>
-              <div>Home</div>
-              <div>Merch</div>
-              <div>Subscribe</div>
-              <div>Patreon</div>
-            </nav>
-          </aside> */}
+          
         </div>
       </div>
     </div>
