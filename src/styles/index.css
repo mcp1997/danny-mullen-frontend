@@ -106,14 +106,13 @@ h1 {
 }
 
 .onlyfans-social { /* one-off icon since FontAwesome does not provide icon for OnlyFans - also applies to icon in Footer */
-
   font-size: 1.4rem;
+}
 
-  &:hover {
-    transform: scale(1.2);
-    transition: all ease 500ms;
-    color: rgb(181,205,0);
-  }
+.onlyfans-social:hover {
+  transform: scale(1.2);
+  transition: all ease 500ms;
+  color: rgb(181,205,0);
 }
 
 /* MERCH PREVIEW */
@@ -179,15 +178,6 @@ h1 {
   justify-content: center;
   gap: 48px;
   margin: 4px auto 0;
-
-  hr {
-    min-height: 100%;
-    max-height: 100vh;
-    margin: 0;
-    width: 4px;
-    background-color: #d3d3d3;
-    color: #d3d3d3;
-  }
 }
 
 .LatestVideo {
@@ -195,14 +185,14 @@ h1 {
   padding: 1%;
   padding-bottom: 0;
   border-radius: 10px;
+}
 
-  h3 {
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    color: #000714;
-    margin: 6px 0 10px;
-  }
+.video-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #000714;
+  margin: 6px 0 10px;
 }
 
 .LatestShorts {
@@ -210,14 +200,14 @@ h1 {
   padding: 1%;
   padding-bottom: 0;
   border-radius: 10px;
+}
 
-  h3 {
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    color: #000714;
-    margin: 6px 0 10px;
-  }
+.shorts-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #000714;
+  margin: 6px 0 10px;
 }
 
 .shorts-container {
@@ -231,13 +221,13 @@ h1 {
   align-items: center;
   width: 60%;
   margin: 8px auto 15px; /* 15px to account for 1px of padding on parent elements to prevent margin collapsing */
+}
 
-  hr {
-    min-height: 100%;
-    max-height: 100vh;
-    margin: 0;
-    color: #d3d3d3;
-  }
+.links-separator {
+  min-height: 100%;
+  max-height: 100vh;
+  margin: 0;
+  color: #d3d3d3;
 }
 
 /* PATREON PREVIEW */
@@ -266,12 +256,12 @@ h1 {
   padding: 16px;
   background-color: #cde800;
   border-radius: 10px;
+}
 
-  img {
-    box-shadow: 0 0 8px 4px rgb(100, 100, 100);
-    height: 225px;
-    width: 400px;
-  }
+.patreon-img {
+  box-shadow: 0 0 8px 4px rgb(100, 100, 100);
+  height: 225px;
+  width: 400px;
 }
 
 .patreon-link {
@@ -398,10 +388,10 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+  }
 
-    h2 {
-      font-size: 2.2rem;
-    }
+  .footer-title {
+    font-size: 2.2rem;
   }
 
   .footer-socials-container {
@@ -569,12 +559,12 @@ h1 {
     opacity: 1;
   }
 
-  /* .no-scroll {
+  .no-scroll {
     overflow: hidden;
     height: 100vh;
     width: 100vw;
     position: fixed;
-  } */
+  }
 
   /* FOOTER */
   .footer-socials-container {

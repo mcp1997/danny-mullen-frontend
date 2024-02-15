@@ -15,7 +15,7 @@ export default function YouTubePreview() {
 
       <div className='links-container'>
         <LinkButton style={{ color: '#d3d3d3' }} disableRipple href='https://www.youtube.com/@DannyMullenOfficial/videos'>View More</LinkButton>
-        <hr style={{ height: '64px' }}/>
+        <hr className='links-separator' style={{ height: '64px' }}/>
         <LinkButton style={{ color: '#d3d3d3' }} disableRipple href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</LinkButton>
       </div>
     </div>

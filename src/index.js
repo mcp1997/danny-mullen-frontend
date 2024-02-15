@@ -48,10 +48,10 @@ export function App() {
             `mobile-nav ${visible ? 'visible' : ''}`
           }>
             <div className='mobile-nav-container'>
-              <div href='#top'>Home</div>
-              <div href='https://dannymullen-shop.fourthwall.com/'>Merch</div>
-              <div href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</div>
-              <div href='https://www.patreon.com/DannyMullen'>Patreon</div>
+              <MobileNavButton href='#top'>Home</MobileNavButton>
+              <MobileNavButton href='https://dannymullen-shop.fourthwall.com/'>Merch</MobileNavButton>
+              <MobileNavButton href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</MobileNavButton>
+              <MobileNavButton href='https://www.patreon.com/DannyMullen'>Patreon</MobileNavButton>
             </div>
           </div>
         )

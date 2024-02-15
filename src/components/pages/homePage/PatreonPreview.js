@@ -12,13 +12,13 @@ export default function PatreonPreview() {
       <h3 className='patreon-subtitle'>Join Danny&apos;s Patreon to gain access to exclusive content</h3>
       <div className='patreon-image-container'>
         <div className='patreon-image-background'>
-          <img src={patreonThumb1} alt='patreon preview photo' />
+          <img className='patreon-img' src={patreonThumb1} alt='patreon preview photo' />
         </div>
         <div className='patreon-image-background'>
-          <img src={patreonThumb2} alt='patreon preview photo' />
+          <img className='patreon-img' src={patreonThumb2} alt='patreon preview photo' />
         </div>
         <div className='patreon-image-background'>
-          <img src={patreonThumb3} alt='patreon preview photo' />
+          <img className='patreon-img' src={patreonThumb3} alt='patreon preview photo' />
         </div>
       </div>
 

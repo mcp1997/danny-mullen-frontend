@@ -33,7 +33,7 @@ export default function LatestShorts() {
         <YouTubeShort videoId={latestShorts[1]} opts={opts} />
         <YouTubeShort videoId={latestShorts[2]} opts={opts} />
       </div>
-      <h3>Danny&apos;s Latest Shorts</h3>
+      <h3 className='shorts-title'>Danny&apos;s Latest Shorts</h3>
     </div>
   )
 }
