@@ -555,7 +555,6 @@ h1 {
     z-index: 99;
     opacity: 0;
     transition: opacity var(--animation-timing);
-    touch-action: none;
 
     .mobile-nav-container {
       width: 50%;
