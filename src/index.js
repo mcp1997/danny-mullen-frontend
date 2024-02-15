@@ -27,11 +27,13 @@ export function App() {
       requestAnimationFrame(() => {
         setVisible(true) // mobile nav fades in and is now visible
       })
+      document.body.classList.add('no-scroll')
     } else {
       setVisible(false) // mobile nav fades out
       setTimeout(() => {
         setShowMobileNav(false) // remove it from the DOM
       }, 200) // same as --animation-timing var found in CSS for the hamburger menu
+      document.body.classList.remove('no-scroll')
     }
   }
 

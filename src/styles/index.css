@@ -551,11 +551,12 @@ h1 {
     position: absolute;
     background-color: #d3d3d3;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     z-index: 99;
     opacity: 0;
     transition: opacity var(--animation-timing);
-    
+    touch-action: none;
+
     .mobile-nav-container {
       width: 50%;
       margin: 12vh auto 0;
@@ -567,6 +568,13 @@ h1 {
 
   .mobile-nav.visible {
     opacity: 1;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
   }
 
   /* FOOTER */
