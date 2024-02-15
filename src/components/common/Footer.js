@@ -11,9 +11,10 @@ import { SiOnlyfans } from 'react-icons/si'
 function Footer() {
   return (
     <div className='Footer'>
-      <h2>DANNY MULLEN</h2>
+      <h2 className='footer-title'>DANNY MULLEN</h2>
       <div className='footer-socials-container'>
-        <h3>FOLLOW ME</h3>
+        <h3 className='footer-subtitle'>FOLLOW ME</h3>
+        <h3 className='mobile-footer-title'>FOLLOW DANNY MULLEN</h3>
         <div className='footer-socials'>
           <StyledLink to='https://www.youtube.com/c/DannyMullenOfficial'>
             <StyledIcon className='icon' icon={faYoutube} />

@@ -50,6 +50,10 @@ const LinkButton = styled(Button)({
   }
 })
 
+// const MobileLinkButton = styled(Button)({
+
+// })
+
 const NavButton = styled(Button)({
   // border: '1px solid red',
   position: 'relative',
@@ -94,6 +98,15 @@ const NavButton = styled(Button)({
   }
 })
 
+const MobileNavButton = styled(Button)({
+  color: 'rgb(0,7,20)',
+  fontSize: '2rem',
+
+  '&:hover': {
+    backgroundColor: '#d3d3d3',
+  }
+})
+
 const StyledIcon = styled(FontAwesomeIcon)({
   fontSize: '1.4rem',
 
@@ -112,6 +125,7 @@ export {
   StyledH2, 
   StyledLink, 
   LinkButton, 
-  NavButton, 
+  NavButton,
+  MobileNavButton,
   StyledIcon 
 }

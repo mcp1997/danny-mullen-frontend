@@ -10,7 +10,7 @@ import '@fontsource/roboto/700.css';
 import '@fontsource-variable/josefin-sans';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { NavButton } from './styles/styledComponents';
+import { MobileNavButton } from './styles/styledComponents';
 
 import { Header1 } from './components/common/header1/Header1';
 // import { Header2 } from './components/common/header2/Header2';
@@ -46,10 +46,10 @@ export function App() {
             `mobile-nav ${visible ? 'visible' : ''}`
           }>
             <div className='mobile-nav-container'>
-              <NavButton href='#top'>Home</NavButton>
-              <NavButton href='https://dannymullen-shop.fourthwall.com/'>Merch</NavButton>
-              <NavButton href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</NavButton>
-              <NavButton href='https://www.patreon.com/DannyMullen'>Patreon</NavButton>
+              <MobileNavButton href='#top'>Home</MobileNavButton>
+              <MobileNavButton href='https://dannymullen-shop.fourthwall.com/'>Merch</MobileNavButton>
+              <MobileNavButton href='https://www.youtube.com/c/DannyMullenOfficial?sub_confirmation=1'>Subscribe</MobileNavButton>
+              <MobileNavButton href='https://www.patreon.com/DannyMullen'>Patreon</MobileNavButton>
             </div>
           </div>
         )
