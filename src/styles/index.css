@@ -155,6 +155,10 @@ h1 {
   object-fit: contain;
 }
 
+.mobile-gallery-container {
+  display: none;
+}
+
 .gallery-container {
   flex: 1;
   background-color: #cde800;
@@ -582,10 +586,33 @@ h1 {
   .mobile-merch-title {
     display: block;
     width: max-content;
-    margin: 0 auto 4px;
-    border-bottom: 1px solid #000714;
+    margin: 2vh auto 4px;
+    border-bottom: 2px solid #000714;
     font-family: 'Josefin Sans Variable', sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  .merch-container {
+    height: auto;
+  }
+
+  .img-container {
+    display: none;
+  }
+
+  .gallery-container {
+    display: none;
+  }
+
+  .mobile-gallery-container {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .image-gallery-image {
+    height: 400px;
   }
 
   /* FOOTER */

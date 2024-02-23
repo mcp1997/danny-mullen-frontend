@@ -40,10 +40,20 @@ export default function MerchPreview() {
           <img className='merchImg' src={merchImg} alt='merch example' />
         </div>
         <div className='gallery-container'>
-          <ProductGallery 
+          <ProductGallery
             items={gallery}
             onClick={handleNav}
             thumbnailPosition='right'
+            showFullscreenButton={false}
+            showPlayButton={false}
+            autoPlay={true}
+            slideInterval={5000}
+          />
+        </div>
+        <div className='mobile-gallery-container'>
+          <ProductGallery
+            items={gallery}
+            onClick={handleNav}
             showFullscreenButton={false}
             showPlayButton={false}
             autoPlay={true}
