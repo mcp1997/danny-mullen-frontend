@@ -34,6 +34,7 @@ export default function MerchPreview() {
   return (
     <div className='MerchPreview'>
       <h2 className='merch-title'>Featured Merch</h2>
+      <h2 className='mobile-merch-title'>Merch</h2>
       <div className='merch-container'>
         <div className='img-container'>
           <img className='merchImg' src={merchImg} alt='merch example' />

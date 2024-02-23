@@ -126,6 +126,10 @@ h1 {
   width: 80%;
 }
 
+.mobile-merch-title {
+  display: none;
+}
+
 .merch-title {
   font-family: 'Josefin Sans Variable', sans-serif;
   font-size: 6rem;
@@ -536,10 +540,6 @@ h1 {
     translate: 7px calc(var(--bar-height) / 2);
   }
 
-  .hamburger-container {
-    border: 1px solid red;
-  }
-
   .mobile-nav {
     position: absolute;
     background-color: #d3d3d3;
@@ -552,7 +552,7 @@ h1 {
 
   .mobile-nav-container {
     width: 50%;
-    margin: 12vh auto 0;
+    margin: 18vh auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -576,7 +576,16 @@ h1 {
   }
 
   .merch-title {
-    content: "merch";
+    display: none;
+  }
+
+  .mobile-merch-title {
+    display: block;
+    width: max-content;
+    margin: 0 auto 4px;
+    border-bottom: 1px solid #000714;
+    font-family: 'Josefin Sans Variable', sans-serif;
+    font-size: 2rem;
   }
 
   /* FOOTER */
