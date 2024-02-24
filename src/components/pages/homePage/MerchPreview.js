@@ -3,7 +3,7 @@ import { testMerchData } from '../../../__tests__/testMerchData'
 import merchImg from '../../../styles/assets/merchImg.png'
 import ProductGallery from 'react-image-gallery'
 import 'react-image-gallery/styles/css/image-gallery.css'
-import { LinkButton } from '../../../styles/styledComponents'
+import { LinkButton, MobileLinkButton } from '../../../styles/styledComponents'
 
 export default function MerchPreview() {
   const [gallery, setGallery] = useState([])
@@ -54,7 +54,7 @@ export default function MerchPreview() {
           <ProductGallery
             items={gallery}
             onClick={handleNav}
-            showFullscreenButton={false}
+            showFullscreenButton={true}
             showPlayButton={false}
             autoPlay={true}
             slideInterval={5000}
@@ -63,6 +63,7 @@ export default function MerchPreview() {
       </div>
       <div className='link-button-container'>
         <LinkButton disableRipple href='https://dannymullen-shop.fourthwall.com/'>Shop All</LinkButton>
+        <MobileLinkButton sx={{ '&:hover': { backgroundColor: '#000714' } }} style={{ color: '#e1ff00' }} href='https://dannymullen-shop.fourthwall.com/'>Shop All</MobileLinkButton>
       </div>
     </div>
   )

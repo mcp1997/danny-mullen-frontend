@@ -47,12 +47,31 @@ const LinkButton = styled(Button)({
 
   '&:active': {
     backgroundColor: 'rgb(0,0,0,0)'
+  },
+
+  '@media (max-width: 600px)': {
+    display: 'none',
   }
 })
 
-// const MobileLinkButton = styled(Button)({
+const MobileLinkButton = styled(Button)({
+  display: 'none',
+  color: '#d3d3d3',
+  backgroundColor: '#000714',
+  borderRadius: '9999px', /* for pillow shape */
+  fontSize: '1.6rem',
+  padding: '8px 16px',
+  margin: '0 auto',
 
-// })
+  // '&:hover': {
+  //   backgroundColor: 'transparent',
+  //   color: 'red',
+  // },
+
+  '@media (max-width: 600px)': {
+    display: 'block',
+  }
+})
 
 const NavButton = styled(Button)({
   // border: '1px solid red',
@@ -124,7 +143,8 @@ const StyledIcon = styled(FontAwesomeIcon)({
 export { 
   StyledH2, 
   StyledLink, 
-  LinkButton, 
+  LinkButton,
+  MobileLinkButton,
   NavButton,
   MobileNavButton,
   StyledIcon 
