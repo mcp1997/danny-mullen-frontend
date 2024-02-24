@@ -63,7 +63,15 @@ export default function MerchPreview() {
       </div>
       <div className='link-button-container'>
         <LinkButton disableRipple href='https://dannymullen-shop.fourthwall.com/'>Shop All</LinkButton>
-        <MobileLinkButton sx={{ '&:hover': { backgroundColor: '#000714' } }} style={{ color: '#e1ff00' }} href='https://dannymullen-shop.fourthwall.com/'>Shop All</MobileLinkButton>
+        <MobileLinkButton 
+          sx={{ 
+            color: '#e1ff00',
+            margin: '32px auto 24px',
+            '&:hover': { backgroundColor: '#000714' }, 
+            '&:active': { color: '#ffffff' } 
+          }}
+          href='https://dannymullen-shop.fourthwall.com/'
+        >Shop All</MobileLinkButton>
       </div>
     </div>
   )
