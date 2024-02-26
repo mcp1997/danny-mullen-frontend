@@ -392,6 +392,29 @@ h1 {
     width: 100%;
   }
 
+  /* MERCH PREVIEW */
+  .MerchPreview {
+    width: 96%;
+    margin-top: 7vh; 
+  }
+
+  .img-container {
+    flex: 1;
+  }
+
+  .gallery-container {
+    display: none;
+  }
+
+  .mobile-gallery-container {
+    display: block;
+    flex: 2;
+  }
+
+  .image-gallery-image {
+    height: 400px;
+  }
+
   /* FOOTER */
   .Footer {
     padding: 3.5% 0;
@@ -433,6 +456,48 @@ h1 {
     flex-flow: column nowrap;
     gap: 16px;
     align-items: center;
+  }
+
+  /* MERCH PREVIEW */
+  .MerchPreview {
+    width: 90%;
+  }
+
+  .merch-title {
+    display: none;
+  }
+
+  .mobile-merch-title {
+    display: block;
+    width: max-content;
+    margin: 2vh auto 0;
+    border-bottom: 2px solid #000714;
+    font-family: 'Josefin Sans Variable', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  .merch-container {
+    margin: 3vh auto -1.4vh;
+    height: auto;
+  }
+
+  .img-container {
+    display: none;
+  }
+
+  .gallery-container {
+    display: none;
+  }
+
+  .mobile-gallery-container {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .image-gallery-image {
+    height: 400px;
   }
 
   /* FOOTER */
@@ -575,44 +640,15 @@ h1 {
 
   /* MERCH PREVIEW */
   .MerchPreview {
-    width: 90%;
     margin-top: 13vh;
   }
 
-  .merch-title {
-    display: none;
-  }
-
   .mobile-merch-title {
-    display: block;
-    width: max-content;
     margin: 2vh auto 4px;
-    border-bottom: 2px solid #000714;
-    font-family: 'Josefin Sans Variable', sans-serif;
-    font-size: 4rem;
-    text-transform: uppercase;
   }
 
   .merch-container {
     height: auto;
-  }
-
-  .img-container {
-    display: none;
-  }
-
-  .gallery-container {
-    display: none;
-  }
-
-  .mobile-gallery-container {
-    display: block;
-    width: 100%;
-    padding: 0;
-  }
-
-  .image-gallery-image {
-    height: 400px;
   }
 
   /* FOOTER */

@@ -49,7 +49,7 @@ const LinkButton = styled(Button)({
     backgroundColor: 'rgb(0,0,0,0)'
   },
 
-  '@media (max-width: 600px)': {
+  '@media (max-width: 992px)': {
     display: 'none',
   }
 })
@@ -63,12 +63,7 @@ const MobileLinkButton = styled(Button)({
   padding: '8px 16px',
   margin: '0 auto',
 
-  // '&:hover': {
-  //   backgroundColor: 'transparent',
-  //   color: 'red',
-  // },
-
-  '@media (max-width: 600px)': {
+  '@media (max-width: 992px)': {
     display: 'block',
   }
 })
