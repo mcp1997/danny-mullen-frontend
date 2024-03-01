@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { testMerchData } from '../../../__tests__/testMerchData'
 import merchImg from '../../../styles/assets/merchImg.png'
+import merchImgTall from '../../../styles/assets/merchImgTall.jpg'
 import ProductGallery from 'react-image-gallery'
 import 'react-image-gallery/styles/css/image-gallery.css'
 import { LinkButton, MobileLinkButton } from '../../../styles/styledComponents'
@@ -38,6 +39,7 @@ export default function MerchPreview() {
       <div className='merch-container'>
         <div className='img-container'>
           <img className='merchImg' src={merchImg} alt='merch example' />
+          <img className='merchImg-tall' src={merchImgTall} alt='merch example' />
         </div>
         <div className='gallery-container'>
           <ProductGallery
