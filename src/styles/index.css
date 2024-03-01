@@ -466,6 +466,21 @@ h1 {
   h1 {
     font-size: 2.2rem;
   }
+  
+  /* MERCH PREVIEW */
+  .merch-title {
+    display: none;
+  }
+
+  .mobile-merch-title {
+    display: block;
+    width: max-content;
+    margin: 2vh auto;
+    border-bottom: 2px solid #000714;
+    font-family: 'Josefin Sans Variable', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
 }
 
 @media (max-width: 768px) {
@@ -479,20 +494,6 @@ h1 {
   /* MERCH PREVIEW */
   .MerchPreview {
     width: 90%;
-  }
-
-  .merch-title {
-    display: none;
-  }
-
-  .mobile-merch-title {
-    display: block;
-    width: max-content;
-    margin: 2vh auto 0;
-    border-bottom: 2px solid #000714;
-    font-family: 'Josefin Sans Variable', sans-serif;
-    font-size: 4rem;
-    text-transform: uppercase;
   }
 
   .merch-container {
