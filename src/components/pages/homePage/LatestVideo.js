@@ -6,8 +6,9 @@ export default function LatestVideo() {
   const [latestVideo, setLatestVideo] = useState('')
 
   useEffect(() => {
-    axios.get('https://yt.lemnoslife.com/noKey/playlistItems?part=snippet&playlistId=UUnyxus3H0_-F8Q6gQTkg41g&maxResults=1')
+    axios.get('https://yt.lemnoslife.com/noKey/playlistItems?part=snippet&playlistId=UULFnyxus3H0_-F8Q6gQTkg41g&maxResults=1')
     .then(res => {
+      console.log(res)
       setLatestVideo(res.data.items[0].snippet.resourceId.videoId)
     })
     .catch(err => {
