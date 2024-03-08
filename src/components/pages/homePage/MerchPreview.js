@@ -5,6 +5,7 @@ import merchImgTall from '../../../styles/assets/merchImgTall.jpg'
 import ProductGallery from 'react-image-gallery'
 import 'react-image-gallery/styles/css/image-gallery.css'
 import { LinkButton, MobileLinkButton } from '../../../styles/styledComponents'
+import { Grid } from '@mui/material'
 
 export default function MerchPreview() {
   const [gallery, setGallery] = useState([])
@@ -36,7 +37,40 @@ export default function MerchPreview() {
     <div className='MerchPreview'>
       <h2 className='merch-title'>Featured Merch</h2>
       <h2 className='mobile-merch-title'>Merch</h2>
-      <div className='merch-container'>
+
+      <Grid container>
+        <Grid item xs={4}>
+          <div className='img-container'>
+            <img className='merchImg' src={merchImg} alt='merch example' />
+            <img className='merchImg-tall' src={merchImgTall} alt='merch example' />
+          </div>
+        </Grid>
+        <Grid item xs={8}>
+          <div className='gallery-container'>
+            <ProductGallery
+              items={gallery}
+              onClick={handleNav}
+              thumbnailPosition='right'
+              showFullscreenButton={false}
+              showPlayButton={false}
+              autoPlay={true}
+              slideInterval={5000}
+            />
+          </div>
+          <div className='mobile-gallery-container'>
+            <ProductGallery
+              items={gallery}
+              onClick={handleNav}
+              showFullscreenButton={true}
+              showPlayButton={false}
+              autoPlay={true}
+              slideInterval={5000}
+            />
+          </div>
+        </Grid>
+      </Grid>
+
+      {/* <div className='merch-container'>
         <div className='img-container'>
           <img className='merchImg' src={merchImg} alt='merch example' />
           <img className='merchImg-tall' src={merchImgTall} alt='merch example' />
@@ -62,7 +96,7 @@ export default function MerchPreview() {
             slideInterval={5000}
           />
         </div>
-      </div>
+      </div> */}
       <div className='link-button-container'>
         <LinkButton disableRipple href='https://dannymullen-shop.fourthwall.com/'>Shop All</LinkButton>
         <MobileLinkButton 
