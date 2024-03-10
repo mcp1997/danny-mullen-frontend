@@ -49,7 +49,7 @@ const LinkButton = styled(Button)({
     backgroundColor: 'rgb(0,0,0,0)'
   },
 
-  '@media (max-width: 992px)': {
+  '@media (max-width: 1200px)': {
     display: 'none',
   }
 })
@@ -63,7 +63,7 @@ const MobileLinkButton = styled(Button)({
   padding: '8px 16px',
   margin: '0 auto',
 
-  '@media (max-width: 992px)': {
+  '@media (max-width: 1200px)': {
     display: 'block',
   }
 })
@@ -101,7 +101,7 @@ const NavButton = styled(Button)({
     fontSize: '1rem'
   },
 
-  '@media (max-width: 768px)': {
+  '@media (max-width: 900px)': {
     fontSize: '0.8rem',
     minWidth: '0px',
     padding: '0',

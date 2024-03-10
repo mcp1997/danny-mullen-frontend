@@ -141,14 +141,6 @@ h1 {
   z-index: 1;
 }
 
-.merch-container {
-  display: flex;
-  margin: 10% auto -2.5%;
-  width: 90%;
-  height: 580px;
-  background-color: #cde800;
-}
-
 .merchImg-tall {
   display: none;
   object-fit: contain;
@@ -158,7 +150,7 @@ h1 {
 .merchImg {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .mobile-gallery-container {
@@ -380,7 +372,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1536px) {
   /* HEADER */
   .Header1 {
     padding: 3.5% 0;
@@ -461,7 +453,7 @@ h1 {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   /* HEADER */
   h1 {
     font-size: 2.2rem;
@@ -483,7 +475,7 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   /* HEADER */
   .nav-container {
     flex-flow: column nowrap;

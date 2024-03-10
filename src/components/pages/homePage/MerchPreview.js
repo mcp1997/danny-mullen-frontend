@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { testMerchData } from '../../../__tests__/testMerchData'
-import merchImg from '../../../styles/assets/merchImg.png'
-import merchImgTall from '../../../styles/assets/merchImgTall.jpg'
+import merchImg from '../../../styles/assets/merchImg.jpg'
 import ProductGallery from 'react-image-gallery'
 import 'react-image-gallery/styles/css/image-gallery.css'
 import { LinkButton, MobileLinkButton } from '../../../styles/styledComponents'
@@ -38,12 +37,15 @@ export default function MerchPreview() {
       <h2 className='merch-title'>Featured Merch</h2>
       <h2 className='mobile-merch-title'>Merch</h2>
 
-      <Grid container>
-        <Grid item xs={4}>
-          <div className='img-container'>
-            <img className='merchImg' src={merchImg} alt='merch example' />
-            <img className='merchImg-tall' src={merchImgTall} alt='merch example' />
-          </div>
+      <Grid 
+        container
+        sx={{
+          width: '90%',
+          margin: '10% auto 0',
+        }}
+      >
+        <Grid item xs={4} sx={{ border: { xs: 'solid red 1px', md: 'solid blue 1px', lg: 'solid green 1px' } }}>
+          <img className='merchImg' src={merchImg} alt='merch example' />
         </Grid>
         <Grid item xs={8}>
           <div className='gallery-container'>
