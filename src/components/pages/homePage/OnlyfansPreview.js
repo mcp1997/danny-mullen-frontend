@@ -12,8 +12,8 @@ export default function OnlyfansPreview() {
         <div className='onlyfans-img-container'>
           <img className='onlyfans-img' src='https://picsum.photos/700/400' alt='onlyfans preview' />
         </div>
-        <div className='onlyfans-text'>
-          <p>All of these OnlyFans stars makin&apos; millions and you thought Danny wouldn&apos;t want a piece of the pie?</p>
+        <div className='onlyfans-text-container'>
+          <p className='onlyfans-text'>All of these OnlyFans stars makin&apos; millions and you thought Danny wouldn&apos;t want a piece of the pie?</p>
           <p className='onlyfans-text-italic'>Please.</p>
         </div>
       </div>

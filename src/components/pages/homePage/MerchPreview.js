@@ -41,7 +41,7 @@ export default function MerchPreview() {
         container
         sx={{
           width: '90%',
-          margin: '10% auto 0',
+          margin: '0 auto',
         }}
       >
         <Grid item xs={4} sx={{ border: { xs: 'solid red 1px', md: 'solid blue 1px', lg: 'solid green 1px' } }}>
