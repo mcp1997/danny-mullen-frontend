@@ -42,12 +42,25 @@ export default function MerchPreview() {
         sx={{
           width: '90%',
           margin: '0 auto',
+          height: { lg: '510px', xl: '580px' }
         }}
       >
-        <Grid item xs={4} sx={{ border: { xs: 'solid red 1px', md: 'solid blue 1px', lg: 'solid green 1px' } }}>
+        <Grid 
+          item 
+          xs={0}
+          lg={5}
+          sx={{
+            height: '100%',
+            display: { xs: 'none', lg: 'block' }
+          }}
+        >
           <img className='merchImg' src={merchImg} alt='merch example' />
         </Grid>
-        <Grid item xs={8}>
+        <Grid 
+          item
+          xs={12}
+          lg={7}
+        >
           <div className='gallery-container'>
             <ProductGallery
               items={gallery}
@@ -100,11 +113,15 @@ export default function MerchPreview() {
         </div>
       </div> */}
       <div className='link-button-container'>
-        <LinkButton disableRipple href='https://dannymullen-shop.fourthwall.com/'>Shop All</LinkButton>
+        <LinkButton 
+          disableRipple
+          sx={{ marginTop: '-4vh' }}
+          href='https://dannymullen-shop.fourthwall.com/'
+        >Shop All</LinkButton>
         <MobileLinkButton 
           sx={{ 
             color: '#e1ff00',
-            margin: '32px auto 24px',
+            margin: '3vh auto',
             '&:hover': { backgroundColor: '#000714' }, 
             '&:active': { color: '#ffffff' } 
           }}
