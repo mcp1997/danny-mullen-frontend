@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import useScreenWidth from '../../../utils/customHooks/useScreenWidth'
 import axios from 'axios'
 import YouTubeVid from 'react-youtube'
 
 export default function LatestVideo() {
   const [latestVideo, setLatestVideo] = useState('')
+  const screenWidth = useScreenWidth()
 
   // useEffect(() => {
   //   axios.get('https://yt.lemnoslife.com/noKey/playlistItems?part=snippet&playlistId=UULFnyxus3H0_-F8Q6gQTkg41g&maxResults=1')
@@ -14,6 +16,8 @@ export default function LatestVideo() {
   //     console.error(err)
   //   })
   // }, [])
+
+  console.log(screenWidth)
 
   const opts = {
     height: '432',
