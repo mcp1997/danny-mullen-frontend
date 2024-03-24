@@ -407,6 +407,15 @@ h1 {
     height: 510px;
   }
 
+  /* YOUTUBE PREVIEW */
+  .youtube-vids-container {
+    gap: 24px;
+  }
+
+  .shorts-container {
+    gap: 24px;
+  }
+
   /* FOOTER */
   .Footer {
     padding: 3.5% 0;

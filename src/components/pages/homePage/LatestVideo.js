@@ -20,11 +20,21 @@ export default function LatestVideo() {
   const handleVideoPlayerResize = () => {
     if(screenWidth <= 600) {
       return { height: '', width: '' }
+    } else if(screenWidth <= 750) {
+      return { height: '', width: '' }
     } else if(screenWidth <= 900) {
+      return { height: '', width: '' }
+    } else if(screenWidth <= 1050) {
       return { height: '', width: '' }
     } else if(screenWidth <= 1200) {
       return { height: '', width: '' }
-    } else if(screenWidth <= 1536) {
+    } else if(screenWidth <= 1350) {
+      return { height: '300', width: '533.33' }
+    } else if(screenWidth <= 1500) {
+      return { height: '', width: '' }
+    } else if(screenWidth <= 1650) {
+      return { height: '', width: '' }
+    } else if(screenWidth <= 1800) {
       return { height: '', width: '' }
     } else {
       return { height: '432', width: '768' }
