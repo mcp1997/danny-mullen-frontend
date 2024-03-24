@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import useScreenWidth from '../../../utils/customHooks/useScreenWidth'
 import axios from 'axios'
 import YouTubeShort from 'react-youtube'
 
 export default function LatestShorts() {
   const [latestShorts, setLatestShorts] = useState([])
+  const screenWidth = useScreenWidth()
 
   // useEffect(() => {
   //   axios.get('https://yt.lemnoslife.com/noKey/playlistItems?part=snippet&playlistId=UUSHnyxus3H0_-F8Q6gQTkg41g&maxResults=3')
@@ -18,6 +20,20 @@ export default function LatestShorts() {
   //     console.error(err)
   //   })
   // }, [])
+
+  const handleVideoPlayerResize = () => {
+    if(screenWidth <= 600) {
+      return { height: '', width: '' }
+    } else if(screenWidth <= 900) {
+      return { height: '', width: '' }
+    } else if(screenWidth <= 1200) {
+      return { height: '', width: '' }
+    } else if(screenWidth <= 1536) {
+      return { height: '', width: '' }
+    } else {
+      return { height: '432', width: '243' }
+    }
+  }
 
   const opts = {
     height: '432',

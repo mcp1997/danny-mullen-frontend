@@ -17,16 +17,23 @@ export default function LatestVideo() {
   //   })
   // }, [])
 
-  console.log(screenWidth)
-
-  const opts = {
-    height: '432',
-    width: '768'
+  const handleVideoPlayerResize = () => {
+    if(screenWidth <= 600) {
+      return { height: '', width: '' }
+    } else if(screenWidth <= 900) {
+      return { height: '', width: '' }
+    } else if(screenWidth <= 1200) {
+      return { height: '', width: '' }
+    } else if(screenWidth <= 1536) {
+      return { height: '', width: '' }
+    } else {
+      return { height: '432', width: '768' }
+    }
   }
 
   return (
     <div className='LatestVideo'>
-      <YouTubeVid videoId={latestVideo} opts={opts} />
+      <YouTubeVid videoId={latestVideo} opts={handleVideoPlayerResize()} />
       <h3 className='video-title'>Danny&apos;s Latest YouTube Video</h3>
     </div>
   )
