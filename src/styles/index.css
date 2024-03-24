@@ -416,6 +416,10 @@ h1 {
     gap: 24px;
   }
 
+  .links-container {
+    width: 80%;
+  }
+
   /* FOOTER */
   .Footer {
     padding: 3.5% 0;

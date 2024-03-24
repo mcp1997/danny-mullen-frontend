@@ -31,11 +31,11 @@ export default function LatestVideo() {
     } else if(screenWidth <= 1350) {
       return { height: '300', width: '533.33' }
     } else if(screenWidth <= 1500) {
-      return { height: '', width: '' }
+      return { height: '332', width: '590.22' }
     } else if(screenWidth <= 1650) {
-      return { height: '', width: '' }
+      return { height: '360', width: '640' }
     } else if(screenWidth <= 1800) {
-      return { height: '', width: '' }
+      return { height: '400', width: '711.11' }
     } else {
       return { height: '432', width: '768' }
     }

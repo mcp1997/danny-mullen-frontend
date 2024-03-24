@@ -35,11 +35,11 @@ export default function LatestShorts() {
     } else if(screenWidth <= 1350) {
       return { height: '300', width: '168.75' }
     } else if(screenWidth <= 1500) {
-      return { height: '', width: '' }
+      return { height: '332', width: '186.75' }
     } else if(screenWidth <= 1650) {
-      return { height: '', width: '' }
+      return { height: '360', width: '202.5' }
     } else if(screenWidth <= 1800) {
-      return { height: '', width: '' }
+      return { height: '400', width: '225' }
     } else {
       return { height: '432', width: '243' }
     }
