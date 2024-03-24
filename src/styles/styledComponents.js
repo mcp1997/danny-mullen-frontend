@@ -8,6 +8,12 @@ const StyledH2 = styled('h2')({
   fontSize: '6rem',
   width: 'fit-content',
   margin: '31px auto 32px', /* 31px to account for 1px of padding on parent elements to prevent margin collapsing */
+
+  '@media (max-width: 1200px)': {
+    fontSize: '4rem',
+    width: 'max-content',
+    textTransform: 'uppercase',
+  }
 })
 
 const StyledLink = styled(Link)({
