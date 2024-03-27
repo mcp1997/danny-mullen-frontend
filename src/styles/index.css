@@ -185,7 +185,9 @@ h1 {
 }
 
 .LatestVideo {
+  aspect-ratio: 16 / 9;
   background-color: #cde800;
+  width: 80%;
   padding: 1%;
   padding-bottom: 0;
   border-radius: 10px;
@@ -474,7 +476,9 @@ h1 {
   }
 
   /* YOUTUBE PREVIEW */
-  
+  .youtube-vids-container {
+    flex-flow: row wrap;
+  }
 }
 
 @media (max-width: 900px) {

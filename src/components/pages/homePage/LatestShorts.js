@@ -25,13 +25,11 @@ export default function LatestShorts() {
     if(screenWidth <= 600) {
       return { height: '', width: '' }
     } else if(screenWidth <= 750) {
-      return { height: '', width: '' }
+      return { height: '300', width: '168.75' }
     } else if(screenWidth <= 900) {
-      return { height: '', width: '' }
-    } else if(screenWidth <= 1050) {
-      return { height: '', width: '' }
+      return { height: '370', width: '208.13' }
     } else if(screenWidth <= 1200) {
-      return { height: '', width: '' }
+      return { height: '432', width: '243' }
     } else if(screenWidth <= 1350) {
       return { height: '300', width: '168.75' }
     } else if(screenWidth <= 1500) {

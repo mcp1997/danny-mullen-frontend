@@ -18,16 +18,16 @@ export default function LatestVideo() {
   // }, [])
 
   const handleVideoPlayerResize = () => {
-    if(screenWidth <= 600) {
+    if(screenWidth <= 450) {
+      return { height: '', width: '' }
+    } else if(screenWidth <= 600) {
       return { height: '', width: '' }
     } else if(screenWidth <= 750) {
-      return { height: '', width: '' }
+      return { height: '300', width: '533.33' }
     } else if(screenWidth <= 900) {
-      return { height: '', width: '' }
-    } else if(screenWidth <= 1050) {
-      return { height: '', width: '' }
+      return { height: '360', width: '640' }
     } else if(screenWidth <= 1200) {
-      return { height: '', width: '' }
+      return { height: '432', width: '768' }
     } else if(screenWidth <= 1350) {
       return { height: '300', width: '533.33' }
     } else if(screenWidth <= 1500) {
@@ -43,7 +43,7 @@ export default function LatestVideo() {
 
   return (
     <div className='LatestVideo'>
-      <YouTubeVid videoId={latestVideo} opts={handleVideoPlayerResize()} />
+      <YouTubeVid videoId={latestVideo} opts={{ width: '100%' }} />
       <h3 className='video-title'>Danny&apos;s Latest YouTube Video</h3>
     </div>
   )
