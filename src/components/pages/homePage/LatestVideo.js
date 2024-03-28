@@ -43,7 +43,7 @@ export default function LatestVideo() {
 
   return (
     <div className='LatestVideo'>
-      <YouTubeVid videoId={latestVideo} opts={{ width: '100%' }} />
+      <YouTubeVid videoId={latestVideo} opts={{ width: '100%', minHeight: '100%' }} />
       <h3 className='video-title'>Danny&apos;s Latest YouTube Video</h3>
     </div>
   )
