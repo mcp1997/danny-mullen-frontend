@@ -23,7 +23,7 @@ export default function LatestShorts() {
 
   const handleVideoPlayerResize = () => {
     if(screenWidth <= 600) {
-      return { height: '', width: '' }
+      return { height: '432', width: '243' }
     } else if(screenWidth <= 750) {
       return { height: '300', width: '168.75' }
     } else if(screenWidth <= 900) {

@@ -659,6 +659,12 @@ h1 {
     margin-top: 12vh;
   }
 
+  /* YOUTUBE PREVIEW */
+  .shorts-container {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
   /* FOOTER */
   .footer-socials-container {
     width: 90vw;
