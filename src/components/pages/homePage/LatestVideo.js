@@ -18,10 +18,8 @@ export default function LatestVideo() {
   // }, [])
 
   const handleVideoPlayerResize = () => {
-    if(screenWidth <= 450) {
-      return { height: '', width: '' }
-    } else if(screenWidth <= 600) {
-      return { height: '', width: '' }
+    if(screenWidth <= 600) {
+      return { height: '240', width: '426.67' }
     } else if(screenWidth <= 750) {
       return { height: '300', width: '533.33' }
     } else if(screenWidth <= 900) {
